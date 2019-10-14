@@ -33,18 +33,14 @@ functions key;
 key.Body();
 while(t == 0){
 cout << "\n What function do you want to use? " << endl;
-cout << "1 - Addition " << endl;
-cout << "2 - Subtraction " << endl;
-cout << "3 - Multiplication " << endl;
-cout << "4 - Division " << endl;
-cout << "5 - Want to Exit " << endl;
-cout << "Input: " << endl;
+cout << "1 - Addition\n2 - Subtraction\n3 - Multiplication\n4 - Division\nAnything else - Want to Exit\n\nInput: " << endl;
 cin >> func;
 cout << endl;
 
 switch(func){
 
-    case 1: //Addition
+    case 1: 
+	//Addition
         cout << "**ADDITION**" << endl;
         cout << "Please enter first number: " << endl;
         cin >> x;
@@ -53,7 +49,8 @@ switch(func){
         cout << x << " + " << y << " = ";
         cout << key.Addition(x, y);
         break;
-    case 2: //Subtraction
+    case 2: 
+	//Subtraction
         cout << "**SUBTRACTION**" << endl;
         cout << "Please enter first number: " << endl;
         cin >> x;
@@ -62,7 +59,8 @@ switch(func){
         cout << x << " - " << y << " = ";
         cout << key.Subtraction(x, y);
         break;
-    case 3: //Multiplication
+    case 3: 
+	//Multiplication
         cout << "**MULTIPLICATION**" << endl;
         cout << "Please enter first number: " << endl;
         cin >> x;
@@ -71,7 +69,8 @@ switch(func){
         cout << x << " x " << y << " = ";
         cout << key.Multiplication(x, y);
         break;
-    case 4: //Division
+    case 4: 
+	//Division
         cout << "**DIVISION**" << endl;
         cout << "Please enter first number: " << endl;
         cin >> x;
@@ -80,11 +79,8 @@ switch(func){
         cout << x << " / " << y << " = ";
         cout << key.Division(x, y);
         break;
-    case 5:
-        t = 1;
-        break;
     default:
-        cout << "Invalid Input...";
+	t=1;
         break;
 }
 }
